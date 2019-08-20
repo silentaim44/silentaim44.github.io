@@ -1,0 +1,57 @@
+<html>
+<head>
+<script>
+		document.addEventListener("contextmenu", function(e){
+		e.preventDefault();
+		}, false);
+
+		document.onkeydown = function(event) {
+		var blocked = [8, 9, 13, 16, 17, 18, 19, 20, 27, 33, 34, 35, 36, 37, 38, 39, 40, 45, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 65, 66, 67, 68, 69, 70, 71, 72, 73, 75, 76, 77, 78, 79, 80, 81, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 96, 97, 98, 99, 100, 101, 102, 103, 14, 105, 106, 107, 109, 110, 111, 112, 113, 114, 115, 117, 118, 119, 120, 121, 123, 144, 145, 189, 187, 188, 189, 190, 191, 192, 219, 220, 221, 222];
+
+		if(blocked.indexOf(event.keyCode) > -1) {
+        return false;
+		}
+
+		else if (event.ctrlKey && event.shiftKey && (event.keyCode == 73 || event.keyCode == 74)) {
+        return false;
+		}
+		}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Team</title>
+<script src="https://kit.fontawesome.com/20ab48455b.js"></script>
+</head>
+<body onload="document.body.style.opacity='1'" oncontextmenu="return false">
+  <video autoplay id="video">
+  <source src="video1.mp4" type="video/mp4">
+		video not supported
+ </video>
+<script src="js/hitmarker.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/style.css">
+<div class="test">
+  <section class="first">
+    <div class="wrap">
+      <h1 class="effect active">S I L E N T A I M</h1>
+        <p></p>
+          <font size="3" color="white" font="" face="Courier New" <center="">
+            <div class="names" data-text="crack" style="margin-left:auto; margin-right:auto"><marquee width="40%"> <a target="_blank" href="http://steamcommunity.com/profiles/76561198246635708">luby</a> x <a target="_blank" href="http://steamcommunity.com/profiles/76561198442691481">Spriiime</a> x <a target="_blank" href="http://steamcommunity.com/profiles/76561198358805371">ThatAD</a> x <a target="_blank" href="http://steamcommunity.com/profiles/76561198246635708">luby</a> x <a target="_blank" href="http://steamcommunity.com/profiles/76561198442691481">Spriiime</a> x <a target="_blank" href="http://steamcommunity.com/profiles/76561198358805371">ThatAD</a> x <a target="_blank" href="http://steamcommunity.com/profiles/76561198246635708">luby</a> x <a target="_blank" href="http://steamcommunity.com/profiles/76561198442691481">Spriiime</a> x <a target="_blank" href="http://steamcommunity.com/profiles/76561198358805371">ThatAD</a> </marquee></div>
+	            </font>
+
+      </section>
+    </div>
+
+    <script>
+        var videos = ['video2.mp4', 'video3.mp4'];
+
+    var currentIndex = -1;
+        var video = document.getElementById('video');
+        video.onended = function(){
+            currentIndex++;
+            if(currentIndex < videos.length){
+                video.src = videos[currentIndex];
+            }
+        }
+  		video.volume = 0.2;
+    </script>
+    </body>
+  </html>
